@@ -9,7 +9,7 @@ const TodoList = (props) => {
     <div className="todoList">
       {props.todoList.map((obj) => 
         <div key={obj.id} className={obj.completed ? 'done' : 'todo'}>
-          <button className="todoButton" name={obj.id} onClick={props.strikeThrough}>x</button> {obj.task}
+          <button className="todoButton" name={obj.id} onClick={props.strikeThrough}>x</button> <p>{obj.task}</p>
         </div>
       )}
     </div>

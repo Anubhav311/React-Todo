@@ -13,8 +13,12 @@
     width: 418px;
     height: 25px;
     margin: auto;
+    border-radius: 5px;
     margin-bottom: 30px;
     margin-top: 25px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
@@ -26,7 +30,7 @@
 .add {
     width: 190px;
     /* margin-left: 100px; */
-    margin-right: 38px;
+    margin-right: 44px;
     height: 50px;
     border: none;
     background-color: #FF5C5C;
@@ -61,24 +65,30 @@
 
 
 .todo {
+    display: flex;
     background-color: white;
     width: 70%;
     margin: 20px auto;
     border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .done {
+    display: flex;
     text-decoration: line-through;
     background-color: pink;
     width: 70%;
     margin: 20px auto;
     border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .todoList {
-    width: 80%;
+    width: 90%;
     margin: auto;
     /* background-color: red; */
     padding: 20px;
@@ -90,13 +100,17 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #F6F6F6;
+    background-color: #FF5C5C;
     border: none;
-    /* margin-left: 20px;
-    margin-right: 10px; */
+    color: white;
+    font-weight: bold;
     margin: 10px 10px 10px 20px;
 }
 
 .todoButton:focus {
     outline: none;
+}
+
+p {
+    margin-top: 16px;
 }
