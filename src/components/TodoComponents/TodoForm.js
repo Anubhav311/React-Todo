@@ -2,10 +2,12 @@
 
  const TodoForm = (props) => {
      return (
-         <form>
-             <input type="text" onChange={props.handleChanges} value={props.name}/>
-             <button onClick={props.addItem}>Add Todo</button>
-             <button onClick={props.clearCompleted}>Clear Completed</button>
+         <form className="form">
+            <div className="buttonContainer">
+              <button className="add" onClick={props.addItem}>Add Todo</button>
+              <button className="clear" onClick={props.clearCompleted}>Clear</button>
+            </div>
+               <input className="input" type="text" onChange={props.handleChanges} value={props.name}/>
          </form>
      )
  }
