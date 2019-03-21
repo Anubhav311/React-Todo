@@ -1,2 +1,19 @@
-// your components will all go in this `component` directory.
-// feel free to change this component.js into TodoList.js
+import React from 'react';
+import { getPortPromise } from 'portfinder';
+
+import './Todo.css';
+
+
+const TodoList = (props) => {
+  return (
+    <div className="todoList">
+      {props.todoList.map((obj) => 
+        <div key={obj.id} className={obj.completed ? 'done' : 'todo'}>
+          <button className="todoButton" name={obj.id} onClick={props.strikeThrough}>x</button> {obj.task}
+        </div>
+      )}
+    </div>
+  )
+}
+
+export default TodoList;

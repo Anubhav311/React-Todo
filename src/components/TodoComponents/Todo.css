@@ -1,0 +1,102 @@
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    /* background-color: red; */
+    padding-top: 30px;
+}
+
+.input {
+    margin-left: 70px;
+    width: 418px;
+    height: 25px;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.buttonContainer {
+    margin: auto;
+    margin-top: 10px;
+}
+
+.add {
+    width: 190px;
+    /* margin-left: 100px; */
+    margin-right: 38px;
+    height: 50px;
+    border: none;
+    background-color: #FF5C5C;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.add:focus {
+    outline: none;
+}
+
+.clear {
+    width: 190px;
+    height: 50px;
+    background-color: #FF5C5C;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.clear:focus {
+    outline: none;
+}
+
+
+.todo {
+    background-color: white;
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.done {
+    text-decoration: line-through;
+    background-color: pink;
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.todoList {
+    width: 80%;
+    margin: auto;
+    /* background-color: red; */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.todoButton {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #F6F6F6;
+    border: none;
+    /* margin-left: 20px;
+    margin-right: 10px; */
+    margin: 10px 10px 10px 20px;
+}
+
+.todoButton:focus {
+    outline: none;
+}
