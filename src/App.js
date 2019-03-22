@@ -26,10 +26,12 @@ class App extends React.Component {
     let newTasks = [...this.state.todoList,
       { task: this.state.todoText, id: Date.now(),  completed: false }];
     
-    this.setState({
-      todoList: newTasks,
-      todoText: '',
-    })
+    if(this.state.todoText != ''){
+      this.setState({
+        todoList: newTasks,
+        todoText: '',
+      })  
+    }
   }
 
   completedTask = event => {
